@@ -16,16 +16,6 @@ blueprint:
         target:
           entity:
             domain: light
-    #bright_percentage:
-    #  name: Brightness
-    #  default: 100
-    #  selector:
-    #    number:
-    #      min: 0
-    #      max: 100
-    #      step: 5
-    #      unit_of_measurement: "%"
-    #      mode: slider
     no_motion_wait:
       name: Wait time
       description: Time to leave the light on after last motion is detected.
@@ -42,8 +32,7 @@ blueprint:
         number:
           min: 0
           max: 100
-          unit_of_measurement: number
-          mode: slider
+          unit_of_measurement: "%"
 
 # If motion is detected within the delay,
 # we restart the script.
