@@ -18,7 +18,7 @@ blueprint:
             domain: light
     bright_percentage:
       name: Brightness
-      default: 100
+      # default: 100
       selector:
         number:
           min: 0
